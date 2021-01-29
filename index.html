@@ -3,16 +3,31 @@
 
 <body>
 
-  <p>Test</p>
-
-  <!-- Firebase products that we use -->
-  <script src="/__/firebase/8.2.4/firebase-auth.js"></script>
-  <script src="/__/firebase/8.2.4/firebase-firestore.js"></script>
+  <p>Login</p>
   
-  <!-- Initialize Firebase -->
-  <script src="/__/firebase/init.js"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
 
-  <p>Temp</p>
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyDD5noz9P3-qHcI0fpKyEITCFTmyzvPAYg",
+      authDomain: "consistent-cars.firebaseapp.com",
+      projectId: "consistent-cars",
+      storageBucket: "consistent-cars.appspot.com",
+      messagingSenderId: "1003650732827",
+      appId: "1:1003650732827:web:ecdf2016a416e241ae39be",
+      measurementId: "G-TZ65MH8N50"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
 
 </body>
 
